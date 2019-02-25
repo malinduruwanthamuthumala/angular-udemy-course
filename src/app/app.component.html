@@ -6,4 +6,15 @@ onCreateServer()">submit</button>
 <p [innerText]="allowtosubmit "></p>
 <p>{{usercreation}}</p>
 <app-test></app-test>
+<label for="">first name</label>
+<input type="text" class="form-control" (input)="onUpdate($event)">
+<p>{{fname}}</p>
+<input type="text" class="form-control" [(ngModel)]="fname">
+
+<h1>calculator</h1>
+<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">
+<button (click)="calculate()">calculate</button>
+<p>{{total}}</p>
+
 <router-outlet></router-outlet>
