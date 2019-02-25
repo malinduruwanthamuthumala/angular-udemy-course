@@ -4,7 +4,11 @@
 <button [disabled]="!allowtosubmit" class="btn btn-primary" (click)="
 onCreateServer()">submit</button>
 <p [innerText]="allowtosubmit "></p>
-<p>{{usercreation}}</p>
+<p *ngIf="allowtosubmit else nouser" [ngStyle]="{backgroundColor:getcolor()}">server is created</p>
+
+<ng-template #nouser>
+    <p [ngStyle]="{backgroundColor:getcolor()}">server is not created </p>
+</ng-template>
 <app-test></app-test>
 <label for="">first name</label>
 <input type="text" class="form-control" (input)="onUpdate($event)">

@@ -13,10 +13,12 @@ allowtosubmit=false;
 num1=0;
 num2=0;
 total=0;
+string1="true";
 
 constructor(){
   setTimeout(()=>{
     this.allowtosubmit=true;
+    this.string1="false";
   },2000);
 }
 
@@ -33,5 +35,8 @@ this.fname=(<HTMLInputElement>event.target).value;
 calculate(){
  this.total=this.num1+this.num2;
 
+}
+getcolor(){
+  return this.string1 === 'true' ? 'green' : 'red';
 }
 }
