@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 name='';
+
+allowtosubmit=false;
+constructor(){
+  setTimeout(()=>{
+    this.allowtosubmit=true;
+  },2000);
+}
+
+ngOnInit(){
+
+}
 }
