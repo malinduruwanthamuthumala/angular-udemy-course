@@ -7,6 +7,7 @@ import { Component ,OnInit} from '@angular/core';
 })
 export class AppComponent {
 name='';
+usercreation="No user is registered";
 
 allowtosubmit=false;
 constructor(){
@@ -17,5 +18,9 @@ constructor(){
 
 ngOnInit(){
 
+}
+
+onCreateServer(){
+  this.usercreation="user is created";
 }
 }

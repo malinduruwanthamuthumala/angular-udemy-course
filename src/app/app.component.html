@@ -1,6 +1,9 @@
 <div>Hello world</div>
 <input type="text" [(ngModel)]="name">
 <p> {{name}} </p>
-<button [disabled]="!allowtosubmit" class="btn btn-primary">submit</button>
+<button [disabled]="!allowtosubmit" class="btn btn-primary" (click)="
+onCreateServer()">submit</button>
+<p [innerText]="allowtosubmit "></p>
+<p>{{usercreation}}</p>
 <app-test></app-test>
 <router-outlet></router-outlet>
