@@ -13,9 +13,14 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AuthService } from "./auth.service";
+import { HeadercopmonentComponent } from './headercopmonent/headercopmonent.component';
+import { RecepieComponentComponent } from './recepie-component/recepie-component.component';
+import { RecepieListComponentComponent } from './recepie-list-component/recepie-list-component.component';
+import { RecepieListComponent } from './recepie-list/recepie-list.component';
+import { RecepieComponent } from './recepie/recepie.component';
 @NgModule({
   declarations: [  
-    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent
+    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, HeadercopmonentComponent, RecepieComponentComponent, RecepieListComponentComponent, RecepieListComponent, RecepieComponent
   ],
   imports: [
     BrowserModule,
