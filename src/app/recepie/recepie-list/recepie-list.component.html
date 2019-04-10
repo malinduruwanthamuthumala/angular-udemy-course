@@ -1,3 +1,32 @@
-<p>
-  recepie-list works!
-</p>
+<div class="row" style="margin-top:10px">
+  <div class="col-md-12">
+    <button class="btn btn-primary">New Recepie</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" *ngFor="let recepies of recepie" class="list-group-item clearfix" style="width:400px">
+          <div class="row">
+            <div class="col-md-6"><div class="align-left">
+                <h4 class="list-group-item-heading">{{recepies.name}}</h4>
+                <p class="list-group-item-text"> {{recepies.description}} </p>
+              </div></div>
+            <div class="col-md-6">
+                <span class="align-right" >
+                    <img src="{{recepies.ImagePath}}" [src]="recepies.ImagePath" alt="{{recepies.name}}" class="img-responsive" style="max-height:100px">
+                  </span>
+            </div>
+          </div>
+      
+     
+    </a>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+    
+    <app-recepie-item></app-recepie-item>
+  </div>
+</div>
