@@ -13,14 +13,18 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AuthService } from "./auth.service";
-import { HeadercopmonentComponent } from './headercopmonent/headercopmonent.component';
-import { RecepieComponentComponent } from './recepie-component/recepie-component.component';
-import { RecepieListComponentComponent } from './recepie-list-component/recepie-list-component.component';
-import { RecepieListComponent } from './recepie-list/recepie-list.component';
+import { PushNotificationService } from 'ngx-push-notifications';
 import { RecepieComponent } from './recepie/recepie.component';
+import { NotificationcomponentComponent } from './notificationcomponent/notificationcomponent.component';
+import { RecepieDetailsComponent } from './recepie/recepie-details/recepie-details.component';
+import { RecepieItemComponent } from './recepie/recepie-details/recepie-item/recepie-item.component';
+import { ShopingComponent } from './shoping/shoping.component';
+import { HeaderComponent } from './header/header.component';
+import { RecepieListComponent } from './recepie/recepie-list/recepie-list.component';
+import { ShopingEditComponent } from './shoping/shoping-edit/shoping-edit.component';
 @NgModule({
   declarations: [  
-    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, HeadercopmonentComponent, RecepieComponentComponent, RecepieListComponentComponent, RecepieListComponent, RecepieComponent
+    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, RecepieComponent, NotificationcomponentComponent, RecepieDetailsComponent, RecepieItemComponent, ShopingComponent, HeaderComponent, RecepieListComponent, ShopingEditComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { RecepieComponent } from './recepie/recepie.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService,PushNotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
