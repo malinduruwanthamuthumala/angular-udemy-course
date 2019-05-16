@@ -14,7 +14,7 @@ num1=0;
 num2=0;
 total=0;
 string1="true";
-
+loadedfeatures='recipe'
 constructor(){
   setTimeout(()=>{
     this.allowtosubmit=true;
@@ -38,5 +38,9 @@ calculate(){
 }
 getcolor(){
   return this.string1 === 'true' ? 'green' : 'red';
+}
+onNavigate(feature : string){
+  console.log(feature);
+this.loadedfeatures=feature;
 }
 }
