@@ -22,6 +22,8 @@ import { ShopingComponent } from './shoping/shoping.component';
 import { HeaderComponent } from './header/header.component';
 import { RecepieListComponent } from './recepie/recepie-list/recepie-list.component';
 import { ShopingEditComponent } from './shoping/shoping-edit/shoping-edit.component';
+import { CommonModule } from '@angular/common';  
+
 @NgModule({
   declarations: [  
     AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, RecepieComponent, NotificationcomponentComponent, RecepieDetailsComponent, RecepieItemComponent, ShopingComponent, HeaderComponent, RecepieListComponent, ShopingEditComponent
@@ -33,6 +35,7 @@ import { ShopingEditComponent } from './shoping/shoping-edit/shoping-edit.compon
     AngularFireModule.initializeApp(environment. configure),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    CommonModule 
   ],
   providers: [AuthService,PushNotificationService],
   bootstrap: [AppComponent]
