@@ -22,11 +22,12 @@ import { ShopingComponent } from './shoping/shoping.component';
 import { HeaderComponent } from './header/header.component';
 import { RecepieListComponent } from './recepie/recepie-list/recepie-list.component';
 import { ShopingEditComponent } from './shoping/shoping-edit/shoping-edit.component';
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
+import { ObserveComponent } from './observe/observe.component';  
 
 @NgModule({
   declarations: [  
-    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, RecepieComponent, NotificationcomponentComponent, RecepieDetailsComponent, RecepieItemComponent, ShopingComponent, HeaderComponent, RecepieListComponent, ShopingEditComponent
+    AppComponent, TestComponent, SigninComponent, SignupComponent, DashboardComponent, ForgotPasswordComponent, RecepieComponent, NotificationcomponentComponent, RecepieDetailsComponent, RecepieItemComponent, ShopingComponent, HeaderComponent, RecepieListComponent, ShopingEditComponent, ObserveComponent
   ],
   imports: [
     BrowserModule,
